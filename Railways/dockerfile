@@ -1,0 +1,6 @@
+FROM openjdk:8
+
+WORKDIR /Main.java 
+COPY . /Main.java/
+RUN ["javac", "Main.java"]
+ENTRYPOINT [ "java","Main" ]
